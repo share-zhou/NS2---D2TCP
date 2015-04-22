@@ -1355,9 +1355,9 @@ TcpAgent::slowdown(int how)
 		cwnd_ = (1 - dctcp_alpha_/2.0) * windowd();
 	else if (how & CLOSE_CWND_D2TCP){
 		if(d2tcp_gamma_ > 0)
-			ssthresh_ = (int)(cwnd_+(1-d2tcp_gamma_/2));
+			cwnd_ = (int)(cwnd_+(1-d2tcp_gamma_/2));
 		else
-			ssthresh_ = (int)(cwnd_+1);
+			cwnd_ = (int)(cwnd_+1);
 	}
 	else if (how & CWND_HALF_WITH_MIN) {
 		// We have not thought about how non-standard TCPs, with

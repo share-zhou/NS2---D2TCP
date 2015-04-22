@@ -2727,9 +2727,9 @@ FullTcpAgent::update_d2tcp_gamma(Packet *pkt){
 	{
 	          d = 0.5;
 	}
-	double Tc = B/0.75*int(cwnd_);
+	double Tc = B/(0.75*cwnd_*1500);
 
-	double D = d2tcp_deadline_ - now();
+	double D = (d2tcp_deadline_ - now())*1000;
 
 	if (D <= 0)
 	{

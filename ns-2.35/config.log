@@ -14,7 +14,7 @@ hostname = sujan-Inspiron-5547
 uname -m = x86_64
 uname -r = 3.13.0-49-generic
 uname -s = Linux
-uname -v = #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+uname -v = #83-Ubuntu SMP Fri Apr 10 20:11:33 UTC 2015
 
 /usr/bin/uname -p = unknown
 /bin/uname -X     = unknown
@@ -809,7 +809,7 @@ configure:7959: $? = 0
 configure:7959: result: yes
 configure:7959: checking for fesetprecision
 configure:7959: gcc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccTWp1Nc.o: In function `main':
+/tmp/ccMPGhtX.o: In function `main':
 /home/sujan/Documents/AdvancedComputerNetworks/ns-allinone-2.35/ns-2.35/conftest.c:83: undefined reference to `fesetprecision'
 collect2: error: ld returned 1 exit status
 configure:7959: $? = 1
@@ -1898,7 +1898,7 @@ configure:8897: $? = 0
 configure:8901: result: found
 configure:8915: checking for addr2ascii
 configure:8915: gcc -o conftest -g -O2   -Wl,-export-dynamic conftest.c -lm  >&5
-/tmp/ccw3AqqL.o: In function `main':
+/tmp/cchVyFmx.o: In function `main':
 /home/sujan/Documents/AdvancedComputerNetworks/ns-allinone-2.35/ns-2.35/conftest.c:94: undefined reference to `addr2ascii'
 collect2: error: ld returned 1 exit status
 configure:8915: $? = 1
